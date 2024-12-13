@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<listing_price_to_nearest_1000 &le; 402.59<br/>squared_error = 26833326329.214<br/>samples = 1784<br/>value = 334738.407>, fillcolor="#f9e2d1"] ;
+1 [label=<num_full_bathrooms &le; 1.5<br/>squared_error = 8721728399.842<br/>samples = 1163<br/>value = 245990.134>, fillcolor="#fef9f6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<coop_condo_co-op &le; 0.5<br/>squared_error = 6013402381.275<br/>samples = 1091<br/>value = 234038.687>, fillcolor="#fefcfb"] ;
+1 -> 2 ;
+3 [label=<squared_error = 8233989246.251<br/>samples = 59<br/>value = 398673.692>, fillcolor="#f5d1b6"] ;
+2 -> 3 ;
+4 [label=<squared_error = 4248269812.805<br/>samples = 1032<br/>value = 224626.415>, fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label=<parking_charges &le; 131.5<br/>squared_error = 14799668349.817<br/>samples = 72<br/>value = 427087.743>, fillcolor="#f4c9aa"] ;
+1 -> 5 ;
+6 [label=<squared_error = 9427282566.03<br/>samples = 59<br/>value = 390537.737>, fillcolor="#f6d3b9"] ;
+5 -> 6 ;
+7 [label=<squared_error = 5602652796.398<br/>samples = 13<br/>value = 592968.537>, fillcolor="#eb9d64"] ;
+5 -> 7 ;
+8 [label=<num_full_bathrooms &le; 1.5<br/>squared_error = 18377326492.191<br/>samples = 621<br/>value = 500944.914>, fillcolor="#f0b58b"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<coop_condo_co-op &le; 0.5<br/>squared_error = 12256941823.322<br/>samples = 294<br/>value = 412792.433>, fillcolor="#f5cdb0"] ;
+8 -> 9 ;
+10 [label=<squared_error = 9052993046.114<br/>samples = 190<br/>value = 455229.386>, fillcolor="#f2c19e"] ;
+9 -> 10 ;
+11 [label=<squared_error = 8809459804.07<br/>samples = 104<br/>value = 335263.384>, fillcolor="#f9e1d1"] ;
+9 -> 11 ;
+12 [label=<num_floors_in_building &le; 20.5<br/>squared_error = 10611842299.765<br/>samples = 327<br/>value = 580201.274>, fillcolor="#eba06a"] ;
+8 -> 12 ;
+13 [label=<squared_error = 8865518461.756<br/>samples = 288<br/>value = 564461.188>, fillcolor="#eca470"] ;
+12 -> 13 ;
+14 [label=<squared_error = 8167777110.173<br/>samples = 39<br/>value = 696435.754>, fillcolor="#e58139"] ;
+12 -> 14 ;
+}
